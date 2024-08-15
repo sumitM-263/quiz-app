@@ -87,21 +87,27 @@ const questions=[
         question:'What is left shift operator in C++?',
         answers:[
             {text: '>>',correct:false},
+            {text: '&',correct:false},
+            {text: '~',correct:false},
             {text: '<<', correct:true}
         ]
     },
     {
         question:'What is right shift operator in C++?',
         answers:[
+            {text: '<<', correct:false},
+            {text: '|', correct:false},
             {text: '>>',correct:true},
-            {text: '<<', correct:false}
+            {text: '%', correct:false}
         ]
     },
     {
         question:'What is xor operator in C++?',
         answers:[
             {text: '&',correct:false},
-            {text: '^', correct:true}
+            {text: '^', correct:true},
+            {text: '~',correct:false},
+            {text: '/',correct:false}
         ]
     }
 ]
