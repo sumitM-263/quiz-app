@@ -8,11 +8,11 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <main class="">
+    <main>
         <div class="container">
-            <div class="question-container hide">
-                <div class="question">Question 1</div>
-                <div class="options-grid">
+            <div id="question-container" class="question-container hide">
+                <div class="question" id="question">Question 1</div>
+                <div class="options-grid" id="answer-btns">
                     <button class="btn">Answer 1</button>
                     <button class="btn">Answer 2</button>
                     <button class="btn">Answer 3</button>
@@ -21,7 +21,7 @@
             </div>
             <div class="controls">
                 <button id="start-btn" class="start-btn btn">Start</button>
-                <button id="close-btn" class="close-btn btn hide">Next</button>
+                <button id="next-btn" class="next-btn btn hide">Next</button>
             </div>
         </div>
     </main>

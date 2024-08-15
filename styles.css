@@ -11,7 +11,7 @@
     --hue-incorrect: 12;
 }
 
-main{
+body{
     
     display: flex;
     width: 100vw;
@@ -21,12 +21,12 @@ main{
     background-color: hsl(var(--hue), 100%, 50%);
 }
 
-main.correct{
+body.correct{
     background-color: hsl(var(--hue-correct), 100%, 50%);
     /* background-color:hwb(113 3% 2%); */
 }
 
-main.incorrect{
+body.incorrect{
     background-color: hsl(var(--hue-incorrect), 100%, 50%);
 }
 
@@ -97,7 +97,7 @@ main.incorrect{
     gap: 10px;
 }
 
-.start-btn,.close-btn{
+.start-btn,.next-btn{
     font-size: 1.5rem;
     padding: 10px 15px;
 }
