@@ -5,7 +5,7 @@ const questionElement=document.getElementById('question');
 const answerButtonsElement=document.getElementById('answer-btns');
 // console.log(questionContainer)
 
-let shuffledQuestions,currentQuestionIndex;
+let shuffledAnswers,shuffledQuestions,currentQuestionIndex;
 
 const startGame=()=>{
     shuffledQuestions=questions.sort(()=> Math.random()-0.5);
@@ -29,7 +29,8 @@ function setNextQuestion(){
 
 const showQuestion=(question)=>{
     questionElement.innerText=question.question;
-    question.answers.forEach(answer=>{
+    shuffledAnswers=question.answers.sort(()=> Math.random()-0.5);
+    shuffledAnswers.forEach(answer=>{
         const button=document.createElement('button');
         button.innerText=answer.text;
         button.classList.add('btn');
